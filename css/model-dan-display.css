@@ -1,0 +1,4 @@
+.nav-menu li { display: inline-block; }
+.nav-menu li a { display: block; padding: 10px 15px; margin-right: 5px; } 
+.nav-menu li a { text-decoration: none; color: white; background-color: #333; } 
+

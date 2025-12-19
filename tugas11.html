@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form HTML Dasar</h1>
+  <p>Contoh implementasi Form HTML sesuai materi.</p>
+  <!-- STRUKTUR FORM DASAR -->
+  <h2>1. Struktur Form Dasar</h2>
+
+  <form>
+    <input type="text" placeholder="Contoh input">
+    <button type="submit">Kirim</button>
+  </form>
+
+  <hr>
+
+  <!-- INPUT TEXT -->
+  <h2>2. Input Text</h2>
+
+  <label for="nama">Nama:</label><br>
+  <input type="text" id="nama" placeholder="Tulis nama kamu">
+
+  <br><br>
+
+  <label>Email:</label><br>
+  <input type="email" placeholder="email@contoh.com">
+
+  <br><br>
+
+  <label>Password:</label><br>
+  <input type="password" placeholder="Password">
+
+  <hr>
+
+  <!-- RADIO BUTTON -->
+  <h2>3. Radio Button (Pilih Satu)</h2>
+
+  <p>Jenis Kelamin:</p>
+
+  <input type="radio" id="pria" name="gender" value="laki-laki">
+  <label for="pria">Laki-laki</label><br>
+
+  <input type="radio" id="wanita" name="gender" value="perempuan">
+  <label for="wanita">Perempuan</label>
+
+  <hr>
+
+  <!-- CHECKBOX -->
+  <h2>4. Checkbox (Pilih Banyak)</h2>
+
+  <p>Hobi:</p>
+
+  <input type="checkbox" id="baca" name="hobi" value="membaca">
+  <label for="baca">Membaca</label><br>
+
+  <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+  <label for="olahraga">Olahraga</label>
+
+  <hr>
+
+  <!-- SELECT / DROPDOWN -->
+  <h2>5. Select (Dropdown)</h2>
+
+  <label for="kota">Kota:</label><br>
+  <select id="kota" name="kota">
+    <option value="">-- Pilih Kota --</option>
+    <option value="jakarta">Jakarta</option>
+    <option value="bandung">Bandung</option>
+    <option value="surabaya">Surabaya</option>
+  </select>
+
+  <hr>
+
+  <!-- INPUT KHUSUS -->
+
+  <h2>6. Input Khusus</h2>
+
+  <label>Angka:</label><br>
+  <input type="number" min="1" max="100" step="1">
+
+  <br><br>
+
+  <label>Tanggal:</label><br>
+  <input type="date">
+
+  <br><br>
+
+  <label>Upload File:</label><br>
+  <input type="file" accept=".jpg,.png,.pdf">
+
+  <br><br>
+
+  <label>Pilih Warna:</label><br>
+  <input type="color" value="#3498db">
+
+  <hr>
+
+  <!-- BUTTON -->
+  <h2>7. Button</h2>
+
+  <button type="submit">Daftar</button>
+  <button type="reset">Hapus</button>
+
+  <hr>
+
+  <!-- 8. ATRIBUT PENTING -->
+  <h2>8. Atribut Penting</h2>
+
+  <label>Required:</label><br>
+  <input type="text" required placeholder="Wajib diisi">
+
+  <br><br>
+
+  <label>Disabled:</label><br>
+  <input type="text" disabled value="Tidak bisa diubah">
+
+  <br><br>
+
+  <label>Readonly:</label><br>
+  <input type="text" readonly value="Hanya baca">
+
+  <br><br>
+
+  <label>Maxlength:</label><br>
+  <input type="text" maxlength="10" placeholder="Maks 10 karakter">
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ====== BAGIAN HEAD: SEO, META, DAN KONEKSI CSS ====== -->
+  <meta charset="UTF-8" />
+  <!-- Deskripsi singkat halaman untuk SEO -->
+  <meta name="description" content="Portofolio pribadi Fatia Khoerunnisa, mahasiswa Informatika Universitas Mayasari Bakti angkatan 2025." />
+  <!-- Supaya tampilan responsive di HP -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph untuk tampilan share di media sosial -->
+  <meta property="og:title" content="Portofolio: Fatia Khoerunnisa" />
+  <meta property="og:image" content="img/fatia-profile.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>Portofolio Fatia Khoerunnisa</title>
+
+  <!-- Menghubungkan file CSS eksternal -->
+ 
+</head>
+<body>
+  <!-- ====== HEADER: JUDUL SITUS DAN NAVIGASI UTAMA ====== -->
+  <header>
+    <div class="container header-content">
+      <div class="logo-area">
+        <!-- Alt text menjelaskan isi gambar -->
+        <img src="profile.jpg" alt="Foto Fatia Khoerunnisa tersenyum dengan latar biru" class="logo-img" />
+        <div>
+          <!-- h1 hanya satu kali di seluruh halaman -->
+          <h1>Portofolio Fatia Khoerunnisa</h1>
+          <p class="subtitle">Mahasiswa Baru Informatika &#x2728;</p>
+        </div>
+      </div>
+
+      <!-- NAVIGASI DENGAN ARIA-LABEL UNTUK AKSESIBILITAS -->
+      <nav aria-label="Navigasi utama">
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#education">Pendidikan</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Projek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="tugas10.html">tugas10</a></li>
+          <li><a href="tugas11.html">tugas11</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== MAIN: KONTEN UTAMA HALAMAN ====== -->
+  <main>
+    <!-- ====== SECTION ABOUT: INFORMASI PRIBADI ====== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <!-- ARTICLE: DESKRIPSI DIRI UTAMA (TABINDEX UNTUK AKSES KEYBOARD) -->
+        <article id="profil-fatia" class="card" tabindex="0">
+          <h2 id="about-heading">Tentang Fatia</h2>
+          <!-- Paragraf deskripsi diri menggunakan data yang diberikan -->
+          <p>
+            Nama saya <strong>Fatia Khoerunnisa</strong>. Saya merupakan mahasiswa baru angkatan
+            <time datetime="2025-08-01">2025</time> di Universitas Mayasari Bakti.
+            Saya mengambil jurusan teknik, prodi Informatika, dan sekarang saya sedang belajar pemrograman,
+            khususnya di bidang web komputer menggunakan bahasa
+            <abbr title="HyperText Markup Language">HTML</abbr> dan
+            <abbr title="Cascading Style Sheets">CSS</abbr>.
+          </p>
+          <p>
+            Untuk ke depannya, mohon bantu saya untuk belajar dan membuat saya menjadi mahasiswa
+            yang pintar ngoding. Saya percaya dengan latihan kecil tapi konsisten, kemampuan saya
+            dalam pemrograman akan terus berkembang.
+          </p>
+        </article>
+
+        <!-- ASIDE: INFORMASI SAMPING / FUN FACTS -->
+        <aside class="card cute-aside" aria-label="Fakta singkat tentang Fatia">
+          <h2>Fun Facts &#x1F60A;</h2>
+          <ul>
+            <li>Suka ngoding sambil dengar musik lofi.</li>
+            <li>Mimpi bikin website portofolio yang estetik dan interaktif.</li>
+            <li>Semangat belajar setiap hari walau error tetap lanjut!</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ====== SECTION PENDIDIKAN & PENGALAMAN: MENGGUNAKAN TABEL ====== -->
+    <section id="education" aria-labelledby="edu-heading">
+      <div class="container card">
+        <h2 id="edu-heading">Riwayat Pendidikan & Pengalaman</h2>
+        <!-- TABEL DENGAN CAPTION, THEAD, TBODY, TFOOT, DAN COLSPAN -->
+        <table>
+          <caption>Ringkasan perjalanan belajar dan pengalaman awal Fatia</caption>
+          <thead>
+            <tr>
+              <th>Tahun</th>
+              <th>Institusi / Kegiatan</th>
+              <th>Deskripsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2022 - 2025</td>
+              <td>SMK YSB Suryalaya</td>
+              <td>Mulai tertarik dengan dunia teknologi dan komputer.</td>
+            </tr>
+            <tr>
+              <td>2025 - sekarang</td>
+              <td>Universitas Mayasari Bakti</td>
+              <td>Mahasiswa baru prodi Informatika, fokus belajar dasar pemrograman.</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Belajar Web Dasar</td>
+              <td>Membuat halaman sederhana dengan <abbr title="HyperText Markup Language">HTML</abbr> &amp;
+                <abbr title="Cascading Style Sheets">CSS</abbr>.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <!-- Contoh COLSPAN minimal satu -->
+              <td colspan="3">Catatan: perjalanan ini baru dimulai, masih banyak projek seru menunggu di depan.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- ====== SECTION KEAHLIAN: UL DAN DESCRIPTION LIST ====== -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container card">
+        <h2 id="skills-heading">Keahlian</h2>
+
+        <div class="skills-grid">
+          <!-- LIST UL UNTUK DAFTAR KEAHLIAN -->
+          <article>
+            <h3>Daftar Keahlian Utama</h3>
+            <ul>
+              <li>Dasar <abbr title="HyperText Markup Language">HTML</abbr></li>
+              <li>Dasar <abbr title="Cascading Style Sheets">CSS</abbr></li>
+              <li>Struktur halaman web yang rapi dan semantik</li>
+              <li>Membuat form sederhana yang rapi</li>
+              <li>Belajar aksesibilitas web untuk semua orang</li>
+            </ul>
+          </article>
+
+          <!-- DESCRIPTION LIST UNTUK PENJELASAN DETAIL -->
+          <article>
+            <h3>Detail Keahlian</h3>
+            <dl>
+              <dt>HTML Dasar</dt>
+              <dd>Menggunakan elemen semantik seperti <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                <code>&lt;section&gt;</code>, dan <code>&lt;footer&gt;</code>.</dd>
+
+              <dt>CSS Dasar</dt>
+              <dd>Mengatur warna, font, layout sederhana, dan membuat tampilan estetik dan lucu.</dd>
+
+              <dt>Aksesibilitas</dt>
+              <dd>Mengenal atribut seperti <code>aria-label</code>, <code>aria-describedby</code>,
+                dan penggunaan <code>tabindex</code>.</dd>
+
+              <dt>Belajar Mandiri</dt>
+              <dd>Mampu mengikuti tutorial, dokumentasi, dan latihan dari berbagai sumber online.</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION PROJECT: GAMBAR, IFRAME YOUTUBE, AUDIO ====== -->
+    <section id="projects" aria-labelledby="projects-heading" aria-describedby="projects-desc">
+      <div class="container card">
+        <h2 id="projects-heading">Karya & Projek</h2>
+        <p id="projects-desc">
+          Berikut beberapa contoh projek dan sumber belajar yang membantu perjalanan ngoding Fatia di dunia web.
+        </p>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1: GAMBAR + LINK KE PROJECT DENGAN TARGET=_BLANK -->
+          <article class="project-card">
+            <img src="img/mini-landing-page.png"
+                 alt="Tampilan mini landing page portofolio berwarna biru pastel" />
+            <h3>Mini Landing Page Portofolio</h3>
+            <p>
+              Latihan pertama membuat tampilan halaman portofolio sederhana dengan background biru dan kartu estetik.
+            </p>
+            <a href="https://contoh-project-fatia.com"
+               target="_blank"
+               rel="noopener">
+              Lihat Project
+            </a>
+          </article>
+
+          <!-- PROJECT 2: IFRAME YOUTUBE SEBAGAI SUMBER BELAJAR -->
+          <article class="project-card">
+            <h3>Tutorial HTML Favorit</h3>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/dD2EISBDjWM"
+                title="Tutorial dasar HTML untuk pemula"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p>
+              Video ini membantu memahami struktur dasar <abbr title="HyperText Markup Language">HTML</abbr>
+              saat mulai belajar.
+            </p>
+          </article>
+
+          <!-- PROJECT 3: AUDIO UNTUK MULTIMEDIA TAMBAHAN -->
+          <article class="project-card">
+            <h3>Playlist Fokus Ngoding</h3>
+            <p>Musik lofi untuk menemani sesi belajar ngoding.</p>
+            <audio controls>
+              <source src="media/lofi-focus.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION FORM KONTAK: DENGAN FIELDSET, RADIO, CHECKBOX, VALIDASI ====== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container card">
+        <h2 id="contact-heading">Kontak Fatia</h2>
+        <p id="contact-note">
+          Silakan kirim pesan jika ingin memberi saran atau pertanyaan seputar perjalanan belajar ngoding Fatia.
+        </p>
+
+        <!-- FORM DENGAN ARIA-DESCRIBEDBY UNTUK PENJELASAN TAMBAHAN -->
+        <form action="#" method="post" aria-describedby="contact-note">
+          <fieldset>
+            <legend>Form Kontak</legend>
+
+            <!-- INPUT NAMA: REQUIRED, MINLENGTH, MAXLENGTH -->
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                required
+                minlength="3"
+                maxlength="50"
+                placeholder="Masukkan nama lengkap Anda" />
+            </div>
+
+            <!-- INPUT EMAIL: REQUIRED -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="contoh@email.com" />
+            </div>
+
+            <!-- INPUT NOMOR: REQUIRED -->
+            <div class="form-group">
+              <label for="nomor">Nomor WhatsApp</label>
+              <input
+                type="tel"
+                id="nomor"
+                name="nomor"
+                required
+                minlength="10"
+                maxlength="15"
+                placeholder="08xxxxxxxxxx" />
+            </div>
+
+            <!-- RADIO BUTTON UNTUK JENIS KONTAK -->
+            <fieldset class="form-group inner-fieldset">
+              <legend>Jenis Kontak</legend>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="jenis_kontak" value="saran" required />
+                  Saran
+                </label>
+                <label>
+                  <input type="radio" name="jenis_kontak" value="pertanyaan" />
+                  Pertanyaan
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- TEXTAREA PESAN: REQUIRED, MINLENGTH, MAXLENGTH -->
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="4"
+                required
+                minlength="10"
+                maxlength="300"
+                placeholder="Tulis pesan, saran, atau semangat untuk Fatia di sini..."></textarea>
+            </div>
+
+            <!-- CHECKBOX PERSETUJUAN -->
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="setuju" required />
+                Saya setuju bahwa data ini digunakan untuk keperluan komunikasi dengan Fatia.
+              </label>
+            </div>
+
+            <!-- TOMBOL SUBMIT -->
+            <button type="submit" aria-label="Kirim pesan untuk Fatia">
+              Kirim Pesan
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER: INFORMASI HAK CIPTA DAN WAKTU ====== -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; <time datetime="2025">2025</time> Portofolio Fatia Khoerunnisa.
+        Dibuat dengan cinta, semangat belajar, dan banyak <abbr title="HyperText Markup Language">HTML</abbr> &amp;
+        <abbr title="Cascading Style Sheets">CSS</abbr>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

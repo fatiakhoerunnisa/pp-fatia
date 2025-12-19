@@ -1,0 +1,12 @@
+.nav-link { text-decoration: none; padding: 10px; margin-right: 15px; display: inline-block; } 
+.nav-link:link { color: #007bff; } 
+.nav-link:visited { color: #6c757d; } 
+.nav-link:hover { background-color: yellow; color: black; } 
+.nav-link:active { color: #dc3545; } 
+
+.interaktif-box { padding: 20px; border: 2px solid #ccc; background-color: #f8f8f8; cursor: pointer; transition: 0.3s; /* Efek transisi halus */ } 
+.interaktif-box:hover { border-color: green; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); } 
+
+.cta-button { background-color: #007bff; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; } 
+.cta-button:hover { background-color: #0056b3; } 
+.cta-button:active { background-color: #003c80; transform: translateY(2px); }
