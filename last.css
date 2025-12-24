@@ -1,0 +1,66 @@
+/* ===== RESET DASAR ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== BODY & BACKGROUND ===== */
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #cfe9ff, #87c5ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===== CARD MENU TUGAS ===== */
+
+.menu-tugas {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 260px;
+}
+
+
+/* ===== TOMBOL TUGAS ===== */
+
+.cta-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 30px;
+    background: #4a9dff;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+
+/* ===== EFEK HOVER ===== */
+
+.cta-button:hover {
+    background: #256cd4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+    .menu-tugas {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
