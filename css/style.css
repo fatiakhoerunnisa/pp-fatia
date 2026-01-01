@@ -1,98 +1,102 @@
-/* --- RESET DASAR --- */
+/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
-a {
+
+/* Background halaman */
+body {
+    background-color: #f0f8ff; /* biru muda lembut */
+}
+
+/* Navbar utama */
+.navbar {
+    background: linear-gradient(90deg, #4facfe, #00c6ff);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     text-decoration: none;
 }
 
-/* A. NAVBAR LAYOUT */
-.navbar {
-    /* Kunci Flexbox: Menjadikan item sejajar horizontal */
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    background-color: #2c3e50;
-    padding: 1rem 2rem;
-    color: white;
-}
-.logo a {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* B. MENU UTAMA */
+/* Menu utama */
 .main-menu {
-    /* Kunci Flexbox: Membuat LI menu utama sejajar */
-    display: flex; 
-    list-style: none; /* Hilangkan bullet */
-}
-.main-menu a {
-    display: block; 
-    padding: 10px 15px;
-    color: #ecf0f1;
-}
-.main-menu a:hover {
-    background-color: #3498db;
-}
-
-/* --- C. KUNCI DROPDOWN --- */
-
-/* 1. DROPDOWN PARENT */
-.dropdown-parent {
     list-style: none;
-    /* Kunci Positioning 1: Membuat LI ini menjadi jangkar untuk sub-menu. */
-    position: relative; 
+    display: flex;
+    gap: 25px;
 }
 
-/* 2. SUBMENU (Yang akan disembunyikan) */
+/* Link menu */
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover menu */
+.main-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Dropdown parent */
+.dropdown-parent {
+    position: relative;
+}
+
+/* Submenu */
 .submenu {
     list-style: none;
-    /* Kunci Positioning 2: Membuat sub-menu 'melayang' di atas konten lain. */
-    position: absolute; 
-    /* Tempatkan tepat 100% dari tinggi parent (di bawahnya) */
-    top: 100%; 
+    position: absolute;
+    top: 45px;
     left: 0;
-    min-width: 150px;
-    background-color: #34495e;
-    
-    /* Kunci Display 1: Default-nya sembunyikan! */
-    display: none; 
-    z-index: 10; 
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
 }
 
-/* 3. AKSI HOVER */
+/* Tampilkan dropdown saat hover */
 .dropdown-parent:hover .submenu {
-    /* Kunci Display 2: Tampilkan sub-menu hanya ketika kursor di atas parent. */
-    display: block; 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
-/* Styling Sub-menu Links */
+/* Item submenu */
 .submenu li a {
-    color: white;
-    padding: 10px 15px;
-    border-top: 1px solid #4d657a;
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    font-size: 14px;
 }
+
+/* Hover submenu */
 .submenu li a:hover {
-    background-color: #5d81a5;
+    background-color: #e6f4ff;
+    color: #0077cc;
 }
 
-/* --- A. NAVBAR LAYOUT --- */
-.navbar {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    background-color: #2c3e50;
-    padding: 1rem 2rem;
-    color: white;
-
-    /* == ATURAN FIXED BARU == */
-    position: fixed;   /* Kunci 1: Membuat posisi tetap pada viewport */
-    top: 0;            /* Kunci 2: Menempel di bagian atas viewport */
-    left: 0;
-    width: 100%;       /* Kunci 3: Mengisi seluruh lebar viewport */
-    z-index: 100;      /* Pastikan Navbar selalu di atas semua elemen lain */
+/* Judul konten */
+h1 {
+    color: #0077cc;
+}
