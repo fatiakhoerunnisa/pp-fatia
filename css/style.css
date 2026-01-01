@@ -1,102 +1,41 @@
-/* Reset dasar */
+/* --- RESET DASAR --- */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, sans-serif;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
 }
 
-/* Background halaman */
-body {
-    background-color: #f0f8ff; /* biru muda lembut */
-}
-
-/* Navbar utama */
+/* A. NAVBAR LAYOUT */
 .navbar {
-    background: linear-gradient(90deg, #4facfe, #00c6ff);
-    padding: 15px 40px;
-    display: flex;
+    /* Kunci Flexbox: Menjadikan item sejajar horizontal */
+    display: flex; 
+    justify-content: space-between; 
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    color: white;
 }
-
-/* Logo */
 .logo a {
     color: white;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: none;
 }
 
-/* Menu utama */
+/* B. MENU UTAMA */
 .main-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+    /* Kunci Flexbox: Membuat LI menu utama sejajar */
+    display: flex; 
+    list-style: none; /* Hilangkan bullet */
 }
-
-/* Link menu */
-.main-menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+.main-menu a {
+    display: block; 
+    padding: 10px 15px;
+    color: #ecf0f1;
 }
-
-/* Hover menu */
-.main-menu li a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-/* Dropdown parent */
-.dropdown-parent {
-    position: relative;
-}
-
-/* Submenu */
-.submenu {
-    list-style: none;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    background-color: white;
-    min-width: 180px;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-}
-
-/* Tampilkan dropdown saat hover */
-.dropdown-parent:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Item submenu */
-.submenu li a {
-    display: block;
-    padding: 12px 16px;
-    color: #333;
-    font-size: 14px;
-}
-
-/* Hover submenu */
-.submenu li a:hover {
-    background-color: #e6f4ff;
-    color: #0077cc;
-}
-
-/* Judul konten */
-h1 {
-    color: #0077cc;
+.main-menu a:hover {
+    background-color: #3498db;
 }
